@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/logo_round.png">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/start.css">
+    <link rel="stylesheet" href="/css/burgers.css">
+    <title>СканЕда • Главная</title>
+</head>
+<body>
+
+<header class="main-headerr">
+  <div class="logo-block">
+    <img src="/img/logo_round.png" alt="logo" class="logo">
+    <span class="brand-name" style="color: #9C27FF;">СканЕда</span>
+  </div>
+
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav class="side-menu" id="side-menu">
+    <button class="close-btn">x</button>
+    <a href="">Главная</a>
+    <a href="/products/{{user._id}}">Продукты</a>
+    <a href="/about/{{user._id}}">О сервисе</a>
+    <a href="/cabinet/{{user._id}}"><b>{{user.name}}</b></a>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+</header>
+
+    <section class="hero">
+        <h1>Проверяй продукты легко 📷</h1>
+        <p>Узнай срок годности и подходит ли продукт аллергикам — просто отсканируй штрих‑код.</p>
+        <button onclick="location.href='/main/scanner/{{user._id}}'">Ввести продукт</button>
+    </section>
+
+    <section class="features">
+        <h2>Почему СканЕда?</h2>
+        <div class="cards">
+            <div class="card">⏳ Проверка на просрочку</div>
+            <div class="card">🌿 Безопасность для аллергиков, инвалидов и т.д</div>
+            <div class="card">📱 Удобно и быстро</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 СканЕда • Все права защищены</p>
+    </footer>
+    <script src="/js/burgers.js"></script>
+</body>
+</html>

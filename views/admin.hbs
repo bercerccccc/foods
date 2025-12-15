@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>СканЕда • Вход / Регистрация</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div id="login-block">
+      <div class="auth-title">Добавление товара</div>
+      <div class="auth-subtitle">Введи данные, чтобы продолжить</div>
+      <form action="/admin" method="post">
+              <div>
+          <div class="field-label">Код товара : </div>
+          <input class="field" type="text" name="pinkod" placeholder="••••••••">
+        </div>
+        <div>
+          <div class="field-label">Название товара : </div>
+          <input class="field" type="text" name="tovarName" placeholder="••••••••">
+        </div>
+        <div>
+          <div class="field-label">Аллергик : </div>
+          <input class="field" type="text" name="allergic" placeholder="••••••••">
+        </div>
+        <div>
+          <div class="field-label">Диабетик : </div>
+          <input class="field" type="text" name="diabetic" placeholder="••••••••">
+        </div>
+        <div>
+          <div class="field-label">Состав : </div>
+          <input class="field" type="text" name="sostav" placeholder="••••••••">
+        </div>
+        <div>
+          <div class="field-label">Экологичность : </div>
+          <input class="field" type="text" name="ecologic" placeholder="••••••••">
+        </div>
+        <div>
+          <div class="field-label">Вред природе : </div>
+          <input class="field" type="text" name="vredNature" placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn-primary">Сохранить</button>
+      </form>
+    </div>
+
+    
+  </div>
+
+  <script src="/js/forAdmin.js"></script>
+</body>
+</html>

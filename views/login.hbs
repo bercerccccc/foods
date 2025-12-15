@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+      <div class="container">
+    <h2>Sign in</h2>
+    <div class="subtitle">
+      If you don’t have an account register<br>
+      You can <a href="/reg">Register here!</a>
+    </div>
+
+    <form action="/login" method="post">
+      <div class="field">
+        <label>✉ Email</label>
+        <input type="text" name="email" placeholder="Enter your email address">
+        <p style="color: red;">{{message}}</p>
+      </div>
+
+      <div class="field">
+        <label>🔒 Password</label>
+        <input type="password" name="pass" placeholder="Enter your Password">
+        <p style="color: red;">{{messagee}}</p>
+      </div>
+
+      <button class="login-btn">Login</button>
+    </form>
+  </div>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

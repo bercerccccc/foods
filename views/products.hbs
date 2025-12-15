@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/logo_round.png">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/burgers.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <title>СканЕда • Продукты</title>
+</head>
+<body>
+<header class="main-header">
+  <div class="logo-block">
+    <img src="/img/logo_round.png" alt="logo" class="logo">
+    <span class="brand-name">СканЕда</span>
+  </div>
+
+  <div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="side-menu" id="menu">
+    <div class="close-btn">×</div>
+    <a href="/main/{{user._id}}">Главная</a>
+    <a href="">Продукты</a>
+    <a href="/about/{{user._id}}">О сервисе</a>
+    <a href="/cabinet/{{user._id}}"><b>{{user.name}}</b></a>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+</header>
+
+<h1>📦 История проверенных продуктов</h1>
+
+<ul id="productList" class="product-list"></ul>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="/js/burgers.js"></script>
+<script src="/js/products.js"></script>
+</body>
+</html>

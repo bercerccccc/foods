@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/logo_round.png">
+    <link rel="stylesheet" href="/css/info.css">
+    <link rel="stylesheet" href="/css/burgers.css">
+    <title>СканЕда • О сервисе</title>
+</head>
+<body>
+<header class="main-header">
+  <div class="logo-block">
+    <img src="/img/logo_round.png" alt="logo" class="logo">
+    <span class="brand-name">СканЕда</span>
+  </div>
+
+  <div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="side-menu" id="menu">
+    <div class="close-btn">×</div>
+    <a href="/main/{{user._id}}">Главная</a>
+    <a href="/products/{{user._id}}">Продукты</a>
+    <a href="">О сервисе</a>
+    <a href="/cabinet/{{user._id}}"><b>{{user.name}}</b></a>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+</header>
+
+    <section class="about">
+        <h1>О сервисе СканЕда</h1>
+        <p>СканЕда — это удобный инструмент для проверки качества продуктов. 
+        Мы помогаем покупателям узнавать срок годности и проверять, подходит ли продукт людям с аллергией.</p>
+    </section>
+
+    <section class="how-it-works">
+        <h2>Как это работает</h2>
+        <ol>
+            <li>📷 Отсканируй штрих‑код продукта</li>
+            <li>⏳ Получи информацию о сроке годности</li>
+            <li>🌿 Узнай, безопасен ли продукт для аллергиков</li>
+        </ol>
+    </section>
+
+    <section class="advantages">
+        <h2>Наши преимущества</h2>
+        <div class="cards">
+            <div class="card">✔ Забота о здоровье</div>
+            <div class="card">✔ Надёжные данные</div>
+            <div class="card">✔ Простота использования</div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 СканЕда • Все права защищены</p>
+    </footer>
+    <script src="/js/burgers.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/logo_round.png">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/burgers.css">
+    <title>СканЕда • Главная</title>
+</head>
+<body>
+<header class="main-header">
+  <div class="logo-block">
+    <img src="/img/logo_round.png" alt="logo" class="logo">
+    <span class="brand-name">СканЕда • Личный кабинет</span>
+  </div>
+
+  <div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="side-menu" id="menu">
+    <div class="close-btn">×</div>
+    <a href="/main/{{user._id}}">Главная</a>
+    <a href="/products/{{user._id}}">Продукты</a>
+    <a href="/about/{{user._id}}">О сервисе</a>
+    <a href="">{{user.name}}</a>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+</header>
+
+    <footer>
+        <p>© 2025 СканЕда • Все права защищены</p>
+    </footer>
+
+    <script src="/js/burgers.js"></script>
+</body>
+</html>

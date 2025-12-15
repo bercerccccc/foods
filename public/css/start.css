@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.main-headerr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(0deg, rgba(147, 2, 219, 1) 0%, rgba(13, 11, 11, 1) 68%);
+    height: 100%;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #9C27FF;
+  margin-left: 10px;
+}
+
+.burger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none; 
+  
+}
+
+.menu {
+  margin-right: 200px;   
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color .3s;
+}
+
+.menu a:hover {
+  color: #9C27FF;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+    background-color: #000000;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color .3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #9C27FF;
+}
+
+.scan-icon {
+    width: 32px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.scan-icon:hover {
+    transform: scale(1.15);
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #000000, #c41c1c);
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease infinite;
+background: #9302db;
+background: linear-gradient(180deg, rgba(147, 2, 219, 1) 0%, rgba(13, 11, 11, 1) 68%);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #8a9296;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 25px;
+    line-height: 1.5;
+    color: #8a9296;;
+}
+
+.hero button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background: #9C27FF;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.hero button:hover {
+    transform: translateY(-2px);
+}
+
+.features {
+  padding: 60px 20px;
+  text-align: center;
+  background: #000000;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(219, 8, 8, 0.1);
+    font-size: 18px;
+    flex: 1 1 200px;
+    transition: transform .3s;
+    background-color: #13131a;
+    color: white;
+    border: #9C27FF 1px solid
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+.close-btn {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+body {
+  background: black;
+}

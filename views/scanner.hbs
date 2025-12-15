@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/burgers.css">
+  <link rel="stylesheet" href="/css/scanner.css">
+  <title>Document</title>
+</head>
+<body>
+<header class="main-header">
+  <div class="logo-block">
+    <img src="/img/logo_round.png" alt="logo" class="logo">
+    <span class="brand-name">СканЕда</span>
+  </div>
+
+  <div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="side-menu" id="menu">
+    <div class="close-btn">×</div>
+    <a href="/main/{{user._id}}">Главная</a>
+    <a href="/products/{{user._id}}">Продукты</a>
+    <a href="/about/{{user._id}}">О сервисе</a>
+    <a href="/cabinet/{{user._id}}"><b>{{user.name}}</b></a>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+</header>
+
+<section class="barcode-section">
+  <h1>🔍 Проверка продукта по штрих‑коду</h1>
+
+<form id="stopReload" action="/main/scanner" method="post">
+  <div class="barcode-form">
+    <input type="hidden" name="userId" value="{{user._id}}">
+    <input type="text" id="barcodeInput" name="pinkod" placeholder="Введите штрих‑код">
+    <button type="submit"  id="checkBtn">
+      <span>Проверить</span>
+    </button>
+
+  </div>
+</form>
+      <div id="result" class="result-card">
+          <p><b>Название:</b> {{product.tovarName}}</p>
+          <p><b>Аллергик:</b> {{product.allergic}}</p>
+          <p><b>Диабетик:</b> {{product.diabetic}}</p>
+          <p><b>Состав:</b> {{product.sostav}}</p>
+          <p><b>Экологичность:</b> {{product.ecologic}}</p>
+          <p><b>Вред природе:</b> <i>{{product.vredNature}}</i></p>
+
+      </div>
+
+  <div id="error" class="error-message"></div>
+
+</section>
+
+<footer>
+  <p>© 2025 СканЕда • Все права защищены</p>
+</footer>
+<script src="/js/stop.js"></script>
+<script src="/js/burgers.js"></script>
+<script src="/js/checker.js"></script>
+</body>
+</html>

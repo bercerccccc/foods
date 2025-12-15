@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #000000;
+    color: #333;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d10000;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color .3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #d10000;
+}
+
+.scan-icon {
+    width: 32px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.scan-icon:hover {
+    transform: scale(1.15);
+}
+
+.about, .how-it-works, .advantages {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 32px;
+    color: #9C27FF;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: white;
+}
+
+.how-it-works h2, .advantages h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.how-it-works ol {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background:#13131a;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 18px;
+    flex: 1 1 200px;
+    transition: transform .3s;
+    color: white;
+    border: #9C27FF 1px solid;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+.about {
+    border: none;
+    background: linear-gradient(180deg, rgba(147, 2, 219, 1) 0%, rgba(13, 11, 11, 1) 68%);
+}
+h2 {
+    color: white;
+}
+li {
+    color: white;
+}

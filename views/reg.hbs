@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/reg.css">
+</head>
+<body>
+      <div class="container">
+    <h2>Sign up</h2>
+    <div class="subtitle">
+      If you already have an account register<br>
+      You can <a href="/login">Login here!</a>
+    </div>
+
+    <form action="/reg" method="post">
+        <div class="field">
+            <label>📧 Email</label>
+            <input type="email" name="email" placeholder="Enter your email address">
+            {{!-- <p style="color: red;">{{message}}</p> --}}
+      </div>
+
+      <div class="field">
+        <label>👤 Username</label>
+        <input type="text" name="name" placeholder="Enter your User name">
+        {{!-- <p style="color: red;">{{message}}</p> --}}
+      </div>
+
+      <div class="field">
+        <label>🔒 Password</label>
+        <input type="password" name="pass" placeholder="Enter your Password">
+      </div>
+
+      <div class="field">
+        <label>🔒 Confirm Password</label>
+        <input type="password" name="repass" placeholder="Confirm your Password">
+        <p style="color: red;">{{message}}</p>
+      </div>
+
+      <button class="register-btn">Register</button>
+    </form>
+  </div>
+
+
+</body>
+</html>
